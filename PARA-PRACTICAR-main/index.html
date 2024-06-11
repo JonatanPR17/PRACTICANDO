@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon API</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-red-100 ">
+
+    <div id="pokemonList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-14 gap-4 p-4 bg-transparent hover:rounded"></div>
+
+    <!-- Modal -->
+    <div id="modal" class="fixed z-10 inset-0 overflow-y-auto hidden ">
+        <div class="flex items-center justify-center min-h-screen p-4 ">
+            <div class="modal-content bg-white p-8 max-w-md mx-auto rounded-lg shadow-md text-center">
+                <span class="close absolute top-4 right-4 cursor-pointer">&times;</span>
+                <div id="modalContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>

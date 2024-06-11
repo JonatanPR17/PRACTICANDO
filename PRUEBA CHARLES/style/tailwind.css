@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.label{
+    display: grid;
+    grid-template-areas: "input";
+    margin: 10px auto;
+}
+
+.input{
+    grid-area: input;
+    font: inherit;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: .7rem 1.5rem;
+    
+}
+.label_name{
+    grid-area: input;
+
+    z-index: 100;
+    width: max-content;
+    
+    margin-left: 1rem;
+    padding: 0 .5rem;
+    align-self: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.input:focus + .label_name, .input:not(:placeholder-shown)+.label_name{
+    transform: translateY(-60%) scale(.8);
+    background-color: white;
+    transition: .4s;
+}

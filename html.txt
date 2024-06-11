@@ -1,0 +1,24 @@
+SEO - POSICIONAMIENTO EN GOOGLE
+
+P--Parrafo
+b--negrita
+i--italika
+small--leetra chiquita
+ol--lista ordenada
+ul--listadesordenada
+li--va dentro de las listas
+div--divisiones
+form--formularios
+	input type=""  name=""
+	-text---texto
+	-password---contraseña
+	-number---numeros
+	-email---correo
+	-color--- colores
+	-range--- rango  -- min 10 max 1000
+	-date--- fecha
+	-time---hora
+	-button--- botn  Value
+	-Submit---envia datos
+		required---valor obligatorio
+

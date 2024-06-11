@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Salida</title>
+    <link rel="stylesheet" href="./style/tailwind.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="flex bg-green-600 h-28">
+        <div class="flex justify-start items-center ml-6">
+            <img src="./style/img/logo.jpeg" alt="Logo" class="h-24 w-24 border">
+        </div>
+        <div class=" flex justify-center mx-auto flex-col">
+            <div class="texto">
+                <h2 class="flex flex-col text-white text-3xl mb-1 text-center font-bold">VETERINARIA TOMMY</h2>
+            </div>
+            <div class="flex flex-row font-semibold">
+                <a href="entrada.html"
+                    class="text-white text-2xl mx-4 hover:border-b-4 border-black duration-300">Registro
+                    de
+                    Asistencia</a>
+                <a href="salida.html"
+                    class="text-white text-2xl mx-4 hover:border-b-4 border-black duration-300">Registro
+                    de Salida</a>
+            </div>
+        </div>
+    </header>
+    <div class="container-custom p-6 border border-black bg-white rounded-lg shadow-lg w-1/2 mx-auto mt-[4%]">
+        <h1 class="text-center text-4xl font-semibold mb-6 border-b-2 h-auto">Registro de Salida</h1>
+        <form id="registroSalidaForm">
+            <label for="codigo" class="label">
+                <input type="text" id="codigo" placeholder=" " class="input" required>
+                <span class="label_name" >Ingrese su Codigo</span>
+                <p id="agregar"></p>
+            </label>
+            <div class="text-center">
+                <button type="submit"
+                    class="px-4 py-2 bg-blue-500 text-white rounded-md shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Registrar
+                    Salida
+                </button>
+            </div>
+        </form>
+
+        <div id="mensaje"></div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="./scriptsalida.js"></script>
+</body>
+
+</html>

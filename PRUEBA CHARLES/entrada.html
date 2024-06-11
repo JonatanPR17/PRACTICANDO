@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Entrada</title>
+    <link rel="stylesheet" href="./style/tailwind.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="flex bg-green-600 h-28">
+        <div class="flex justify-start items-center ml-6">
+            <img src="./style/img/logo.jpeg" alt="Logo" class="h-24 w-24 border">
+        </div>
+        <div class=" flex justify-center mx-auto flex-col">
+            <div class="texto">
+                <h2 class="flex flex-col text-white text-3xl mb-1 text-center font-bold">VETERINARIA TOMMY</h2>
+            </div>
+            <div class="flex flex-row font-semibold">
+                <a href="entrada.html"
+                    class="text-white text-2xl mx-4 hover:border-b-4 border-black duration-300">Registro de
+                    Asistencia</a>
+                <a href="salida.html"
+                    class="text-white text-2xl mx-4 hover:border-b-4 border-black duration-300">Registro de Salida</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-custom p-6 border border-black bg-white rounded-lg shadow-lg w-1/2 mx-auto mt-[4%]">
+        <h1 class="text-center text-4xl font-semibold mb-6 border-b-2 h-auto">Registro de Entrada</h1>
+        <form id="registroForm" class="space-y-4">
+
+            <label for="nombre" class="label">
+                <input type="text" id="nombre" placeholder=" " class="input" required>
+                <span class="label_name">Ingrese Su Nombre</span>
+            </label>
+
+
+            <label for="apellidoPaterno" class="label">
+                <input type="text" id="apellidoPaterno" placeholder=" " class="input" required>
+                <span class="label_name">Ingrese su Apellido Paterno</span>
+            </label>
+
+
+            <label for="apellidoMaterno" class="label">
+                <input type="text" id="apellidoMaterno" placeholder=" " class="input" required>
+                <span class="label_name">Ingrese su Apellido Materno</span>
+            </label>
+
+
+            <label for="codigo" class="label">
+                <input type="text" id="codigo" placeholder=" " class="input" required>
+                <span class="label_name">Ingrese su Codigo</span>
+            </label>
+
+
+            <label for="sucursal" class="label">
+                <select id="sucursal" required class="input">
+                    <option value="Sucursal 1">Sucursal 1</option>
+                    <option value="Sucursal 2">Sucursal 2</option>
+                </select>
+            </label>
+
+            <div class="text-center">
+                <button type="submit"
+                    class="px-4 py-2 bg-blue-500 text-white rounded-md shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Registrar
+                    Asistencia</button>
+            </div>
+        </form>
+        <div id="mensaje" class="mt-4 text-center text-lg text-red-500"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 items-center justify-center bg-black bg-opacity-50 hidden">
+        <div class="bg-white rounded-lg shadow-lg p-6 w-1/3">
+            <h2 class="text-2xl font-semibold mb-4">Datos Registrados</h2>
+            <div id="modalContent" class="space-y-2">
+                <!-- Datos del usuario se insertarán aquí -->
+            </div>
+            <button id="closeModal" class="mt-4 px-4 py-2 bg-red-500 text-white rounded-md">Cerrar</button>
+        </div>
+    </div>
+
+
+
+    <script src="./scriptentrada.js"></script>
+</body>
+
+</html>
